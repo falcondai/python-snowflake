@@ -17,7 +17,7 @@ timestamp, data_center, worker, sequence = melt(snowflake_id)
 print 'the tweet was created at %s' % local_datetime(timestamp)
 
 # create a snowflake id for the current millisecond
-print snowflake(time.time()*1000, 1, 0, 0)
+print make_snowflake(time.time()*1000, 1, 0, 0)
 ```
 
 License
